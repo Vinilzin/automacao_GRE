@@ -24,7 +24,7 @@ options = webdriver.EdgeOptions()
 options.add_experimental_option("prefs", prefs)
 driver = webdriver.Edge(options=options)
 
-# ACESSANDO O SITE E ARQUIVO
+# ACESSANDO O SITE E CLICANDO NO BAIXADOR DO ARQUIVO
 driver.get("http://meusite.salvador.ba.gov.br/admin/index.php")
 time.sleep(2)
 driver.find_element(By.NAME, "email").send_keys("usuario")
